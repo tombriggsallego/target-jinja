@@ -1,0 +1,6 @@
+{
+    "template_path": "examples/dbt_models/templates",
+    "output_template": "examples/dbt_models/output/{{{ template_stem }}}_{{{ shortName }}}.sql",
+    "variable_start_string": "{{{",
+    "variable_end_string": "}}}"
+}

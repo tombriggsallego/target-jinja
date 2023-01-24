@@ -1,0 +1,27 @@
+version: 1
+send_anonymous_usage_stats: true
+project_id: "target-jinja"
+default_environment: test
+environments:
+- name: test
+plugins:
+  extractors: []
+  loaders:
+  - name: "target-jinja"
+    namespace: "target_jinja"
+    pip_url: -e .
+    capabilities:
+    - about
+    - stream-maps
+    - record-flattening
+    config:
+      template_path: 'examples/dbt_models/templates'
+      output_template: 'examples/dbt_models/output/{{{ template_stem }}}_{{{ shortName }}}.sql'
+    settings:
+    - name: template_path
+    - name: output_template
+    - name: variable_start_string
+      value: '{{'
+    - name: variable_end_string
+      value: '}}'
+

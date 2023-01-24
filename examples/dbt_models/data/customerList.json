@@ -1,0 +1,9 @@
+{"type": "STATE", "value": {"currently_syncing": "MyDB-vw_customerList"}}
+{"type": "SCHEMA", "stream": "MyDB-vw_customerList", "schema": {"properties": {"name": {"inclusion": "available", "maxLength": 64, "type": ["null", "string"]}, "shortName": {"inclusion": "available", "maxLength": 45, "type": ["null", "string"]}, "customerId": {"inclusion": "available", "minimum": -9223372036854775808, "maximum": 9223372036854775807, "type": ["null", "integer"]}}, "type": "object"}, "key_properties": []}
+{"type": "ACTIVATE_VERSION", "stream": "MyDB-vw_customerList", "version": 1673975090867}
+{"type": "RECORD", "stream": "MyDB-vw_customerList", "record": {"name": "Local Dev", "shortName": "localdev", "customerId": 1}, "version": 1673975090867, "time_extracted": "2023-01-17T17:04:50.870053Z"}
+{"type": "RECORD", "stream": "MyDB-vw_customerList", "record": {"name": "Remote Dev", "shortName": "remotedev", "customerId": 2}, "version": 1673975090867, "time_extracted": "2023-01-17T17:04:50.870053Z"}
+{"type": "STATE", "value": {"currently_syncing": "MyDB-vw_customerList"}}
+{"type": "ACTIVATE_VERSION", "stream": "MyDB-vw_customerList", "version": 1673975090867}
+{"type": "STATE", "value": {"currently_syncing": "MyDB-vw_customerList", "bookmarks": {"MyDB-vw_customerList": {"initial_full_table_complete": true}}}}
+{"type": "STATE", "value": {"currently_syncing": null, "bookmarks": {"MyDB-vw_customerList": {"initial_full_table_complete": true}}}}
