@@ -28,7 +28,7 @@ Put those two templates in a directory and set the `template_path` setting to po
 
 `/path/to/dbt/project/models/{{{ customerName }}}/{{{ template_stem }}}_{{{ customerId }}}{{{ template_suffix }}}`
 
-Note that this example requires setting the `variable_start_string` and `variable_end-string` parameters to `{{{` and `}}}`, respectively, in order to avoid interfering with the formatting of the actual dbt template.
+Note that this example requires setting the `variable_start_string` and `variable_end_string` parameters to `{{{` and `}}}`, respectively, in order to avoid interfering with the formatting of the actual dbt model.
 
  Now define a tap in Meltano that retrieves a single stream containing your list of customers, including each customer's ID (in the customerId field). Run the tap and feed the data to the target, e.g.
 
