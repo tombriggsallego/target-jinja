@@ -54,8 +54,10 @@ pipx install git+https://github.com/tombriggs/target-jinja.git@main
 
 | Setting             | Required | Default | Description |
 |:--------------------|:--------:|:-------:|:------------|
-| template_path        | False    | None    | The path to the target template directory |
-| output_template      | False    | None    | The Jinja template string with which output files will be named |
+| template_path        | True     | None    | The path to the target template directory |
+| output_template      | True     | None    | The Jinja template string with which output files will be named |
+| variable_start_string| False    | None    | The string marking the beginning of a print statement |
+| variable_end_string  | False    | None    | The string marking the end of a print statement |
 | stream_maps          | False    | None    | Config object for stream maps capability. For more information check out [Stream Maps](https://sdk.meltano.com/en/latest/stream_maps.html). |
 | stream_map_config    | False    | None    | User-defined config values to be used within map expressions. |
 | flattening_enabled   | False    | None    | 'True' to enable schema flattening and automatically expand nested properties. |
